@@ -1,0 +1,640 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  color: black;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden;
+}
+
+.logo-title {
+  display: inline-block;
+  margin-top: 2vh;
+  top: 2vh;
+  margin-left: 50px;
+  z-index: 100;
+  overflow: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.logo-title img {
+  margin-top: 1rem;
+  max-width: 25rem;
+}
+
+.logo-title a {
+  text-decoration: none !important;
+  color: white;
+  font-size: 3vh;
+  line-height: 0px;
+}
+
+.logo-title a:hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+
+.navigation {
+  height: 138px;
+}
+
+#menuToggle
+{
+  margin-top: 10px;
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin-top: 2vh;
+  top: 3vh;
+  left: 5vh;
+  height: 138px;
+  overflow: none;
+  width: 15vh;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease-in-out;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(175, 175, 175);
+}
+
+
+#menuToggle input
+{
+  overflow: hidden;
+  margin-right: 150px;
+  float: right;
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 150px;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(5px, 3px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, 3px);
+}
+
+#menu
+{
+  overflow: hidden;
+  position: absolute;
+  display: inline;
+  width: 1200px;
+  margin: -166px 0 0 -1200px;
+  padding: 50px;
+  background: transparent;
+  padding-top: 125px;
+  visibility: hidden;
+  opacity: 0;
+  
+  background: transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(10%, 0);
+  transition: visibility 0s, opacity 0s linear;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 50px;
+  float: right;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+#menuToggle ul {
+  transition: all .55s ease-in-out;
+}
+
+#menuToggle input:checked ~ ul
+{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0%, 0);
+  transition: all .55s ease-in;
+}
+
+#menu .ig {
+  margin-left: -40px;
+}
+
+video {
+  position: fixed;
+  width: 100%;
+  object-fit: cover;
+  z-index: -5;
+  height: 100vh;
+  background-color: grey;
+  opacity: 1;
+}
+
+.wrapper .spacer {
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  float: left;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  margin-top: -158px;
+}
+
+.container-fluid img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -5;
+  margin-left: -15px;
+}
+
+.main-title {
+  margin-top: 22vh;
+}
+
+.main-title h1 {
+  position: relative;
+  font-size: calc(30px + 3vw);
+  letter-spacing: 8px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 1;
+  animation: tfadeIn 0.75s ease-in;
+  transform: translateY(1vh);
+  transition: 0.75s;
+  line-height: 0px;
+}
+
+@keyframes tfadeIn {
+  0%  { opacity: 0; }
+}
+
+.main-title h2 {
+  font-weight: 200;
+  font-size: calc(30px + 1vw);
+  text-transform: uppercase;
+  margin-top: 0px;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+  opacity: 1;
+  animation: t2fadeIn 1s ease-in;
+  transform: translateY(6vh);
+  transition: 1.25s;
+  transition-delay: 0.3s;
+}
+
+@keyframes t2fadeIn{
+  0% { opacity: 0; }
+}
+
+.hero-border {
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  border-style: solid;
+  border-width: 1px;
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  right: 5%;
+  margin-top: 8%;
+  bottom: 6%;
+  overflow: hidden;
+}
+
+.main-title a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 6;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.main-title a:hover {
+  text-decoration: none !important;
+  color: white !important;
+  text-stroke: 0.4px white;
+        -webkit-text-stroke: 0.4px white;
+}
+
+.main-title a:focus {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.main-title li {
+  display: inline;
+  z-index: 6;
+}
+
+.main-title .dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: 3px;
+  margin: 0px 20px;
+}
+
+.projects a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.projects {
+  margin-top: 30vh;
+  text-transform: uppercase;
+  font-size: 11px;
+  position: relative;
+}
+
+.projects a {
+  color: white;
+  z-index: 10;
+}
+
+.projects i {
+  padding-top: 30px;
+  color: white;
+  width: 159px;
+  font-size: 15px;
+  bottom: 0px;
+}
+
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+.headline {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.headline-title {
+  color: black;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.headline-title h2 {
+  margin: 5px;
+}
+
+.container .headline {
+  margin: auto;
+  padding: 30px 55px;
+  max-width: 1020px;
+}
+
+.headline p {
+  padding-top: 15px;
+  color: black;
+  font-size: 15px;
+  line-height: 2.75rem;
+  letter-spacing: 0.5px;
+  max-width: 840px;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+
+
+#img1 {
+  height: 700px;
+  object-fit: cover;
+  width: 55%;
+  position: absolute;
+  left: 0;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+#img2 {
+  height: 400px;
+  object-fit: cover;
+  width: 45%;
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+#img3 {
+  height: 800px;
+  object-fit: cover;
+  width: 25%;
+  position: absolute;
+  right: 0;
+  margin-top: 400px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+#img4 {
+  height: 500px;
+  object-fit: cover;
+  width: 35%;
+  position: absolute;
+  margin-top: 700px;
+  left: 0;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+#img5 {
+  height: 300px;
+  object-fit: cover;
+  width: 20%;
+  position: absolute;
+  right: 25%;
+  margin-top: 400px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+#img6 {
+  height: 500px;
+  object-fit: cover;
+  width: 40%;
+  position: absolute;
+  left: 35%;
+  margin-top: 700px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+
+#placeholder {
+  height: 1200px;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  left: 0;
+  z-index: -10;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: rgb(255, 255, 255) !important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 55px !important;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 400px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  background: rgb(25, 25, 25);
+  padding: 75px 0px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer img {
+  max-width: 200px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 50px 0px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.footer-nav a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav .dot {
+  height: 3px;
+  width: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: 2px;
+  margin: 0px 5px;
+}
+
+
