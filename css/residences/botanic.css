@@ -393,7 +393,7 @@ video {
 .container .headline {
   margin: auto;
   padding: 30px 55px;
-  max-width: 1020px;
+  max-width: 1220px;
 }
 
 .headline p {
@@ -402,7 +402,32 @@ video {
   font-size: 15px;
   line-height: 2.75rem;
   letter-spacing: 0.5px;
-  max-width: 840px;
+  max-width: 1040px;
+  margin-bottom: 30px;
+}
+
+.building-info {
+  text-align: center;
+}
+
+#building-info-text {
+  width: 30%;
+}
+
+.app-info {
+  width: 20%;
+  display: flex;
+}
+
+.building-info p {
+  margin: 2vh 30px;
+  font-size: 20px;
+  left: 0px !important;
+}
+
+.building-info i {
+  font-size: 30px;
+  text-align: left;
 }
 
 .row > .column {
@@ -583,9 +608,16 @@ video {
   top: 0;
 }
 
+.building-info .row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 .footer {
   text-align: center;
-  margin-top: 50px;
   background: rgb(25, 25, 25);
   padding: 75px 0px;
   font-size: 20px;
