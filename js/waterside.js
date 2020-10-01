@@ -35,8 +35,3 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-$(document).on('click', function(event) {
-  if ($(event.target).has('.modal-content').length) {
-      $(".myModal").hide();
-  }
-});
