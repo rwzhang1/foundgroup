@@ -424,7 +424,7 @@ body
 }
 
 .building-info i {
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
 }
 
@@ -439,7 +439,7 @@ body
 }
 
 .modal-display img {
-  object-fit: cover;
+  object-fit: fill;
   position: absolute;
   border-style: solid;
   border-color: rgb(255, 255, 255);
@@ -489,26 +489,30 @@ body
   margin-top: 700px;
 }
 
-@media screen and (max-width: 768px) {
+#placeholder {
+  height: 120vh;
+}
+
+@media screen and (max-width: 1200px) {
   #img6 {
     left: 55%;
     width: 50%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #img4 {
     width: 55%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #img3 {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #img5 {
     width: 45%;
   }
