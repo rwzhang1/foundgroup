@@ -212,7 +212,7 @@ body
   margin-top: -158px;
 }
 
-.container-fluid img {
+.hero-image img {
   position: absolute;
   top: 0px;
   width: 100%;
@@ -238,6 +238,7 @@ body
   transform: translateY(1vh);
   transition: 0.75s;
   line-height: 0px;
+  text-align: center;
 }
 
 @keyframes tfadeIn {
@@ -258,6 +259,7 @@ body
   transform: translateY(6vh);
   transition: 1.25s;
   transition-delay: 0.3s;
+  text-align: center;
 }
 
 @keyframes t2fadeIn{
@@ -323,11 +325,14 @@ body
 }
 
 .projects {
-  margin-top: 30vh;
   text-transform: uppercase;
   font-size: 11px;
   position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
 }
+
 
 .projects a {
   color: white;
@@ -378,6 +383,7 @@ body
 
 .headline-title h2 {
   margin: 5px;
+  text-align: center;
 }
 
 .container .headline {
@@ -401,8 +407,10 @@ body
 }
 
 #building-info-text {
-  width: 30%;
+  max-width: 900px;
+  margin-top: -5px;
 }
+
 
 .app-info {
   width: 20%;
@@ -430,77 +438,80 @@ body
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
-
-
-#img1 {
-  height: 700px;
+.modal-display img {
   object-fit: cover;
-  width: 55%;
   position: absolute;
-  left: 0;
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-width: 2px;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+#img1 {
+  height: 700px;
+  width: 55%;
+  left: 0;
 }
 
 #img2 {
   height: 400px;
-  object-fit: cover;
   width: 45%;
-  position: absolute;
   right: 0;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 2px;
 }
 
 #img3 {
   height: 800px;
-  object-fit: cover;
   width: 25%;
-  position: absolute;
   right: 0;
   margin-top: 400px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 2px;
 }
 
 #img4 {
   height: 500px;
-  object-fit: cover;
   width: 35%;
-  position: absolute;
   margin-top: 700px;
   left: 0;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 2px;
 }
 
 #img5 {
   height: 300px;
-  object-fit: cover;
   width: 20%;
-  position: absolute;
-  right: 25%;
+  left: 55%;
   margin-top: 400px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 2px;
 }
 
 #img6 {
   height: 500px;
-  object-fit: cover;
   width: 40%;
-  position: absolute;
   left: 35%;
   margin-top: 700px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  #img6 {
+    left: 55%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img4 {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img5 {
+    width: 45%;
+  }
 }
 
 #placeholder {
@@ -512,8 +523,6 @@ body
   z-index: -10;
 }
 
-
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -527,7 +536,6 @@ body
   background-color: black;
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -538,7 +546,6 @@ body
   object-fit: unset;
 }
 
-/* The Close Button */
 .close {
   color: rgb(255, 255, 255) !important;
   position: absolute;
@@ -555,12 +562,10 @@ body
   cursor: pointer !important;
 }
 
-/* Hide the slides by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -578,19 +583,16 @@ body
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -604,8 +606,6 @@ body
   display: flex;
   justify-content: center;
 }
-
-
 
 .footer {
   text-align: center;
@@ -660,3 +660,22 @@ body
   margin: 0px 5px;
 }
 
+.mySlides:nth-child(3) img {
+  width: 100%; 
+  object-fit: contain;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 80vh;
+
+}
+
+.modal-display .row img:hover {
+-webkit-filter: brightness(70%);
+-moz-filter: brightness(70%);
+-o-filter: brightness(70%);
+-ms-filter: brightness(70%);
+filter: brightness(70%);
+cursor: pointer;
+}

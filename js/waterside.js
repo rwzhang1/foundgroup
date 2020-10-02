@@ -1,5 +1,7 @@
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  var imgBlock = document.getElementById("myModal");
+  imgBlock.style.display = "block";
+
 }
 
 function closeModal() {

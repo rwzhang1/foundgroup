@@ -65,7 +65,7 @@
 
     <div class="wrapper">
       <img class="spacer" src="/images/forrent/waterside/water7.png">
-      <div class="container-fluid">
+      <div class="container-fluid hero-image">
         <img src="/images/forrent/waterside/water7.png">
       </div>
     </div>
@@ -73,20 +73,14 @@
     <div class="hero-border">
       <div class="main-title">
         <div class="container nav-pills">
-          <center>
-            <h2>7G/8</h2>
-          </center>
-          <center>
-            <h1>Waterside Pl</h1>
-          </center>
+          <h2>7G/8</h2>
+          <h1>Waterside Pl</h1>
           <div class="projects">
-            <center>
-              <a href="/clarendon.html#headline-title">
-                Learn More
-                </br>
-                <i class="fa fa-arrow-down bounce"></i>
-              </a>
-            </center>
+            <a href="/clarendon.html#headline-title">
+              Learn More
+              </br>
+              <i class="fa fa-arrow-down bounce"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -102,12 +96,10 @@
       <div class="row">
         <div class="headline">
           <div class="headline-title" id="headline-title">
-            <center>
-              <h2>
-                Waterside
-              </h2>
+            <h2>
+              Waterside
+            </h2>
           </div>
-          </center>
           <div class="row">
             <p id="headline-info">
 
@@ -121,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid2">
+    <div class="container-fluid modal-display">
       <div class="row">
         <img id="img1" src="images/forrent/waterside/water1.png" onclick="openModal();currentSlide(1)"
           class="hover-shadow">
@@ -135,7 +127,7 @@
           class="hover-shadow">
         <img id="img6" src="images/forrent/waterside/water8.png" onclick="openModal();currentSlide(6)"
           class="hover-shadow">
-        <img id="placeholder" src="images/forrent/waterside/water1.png" onclick="openModal();currentSlide(6)"
+        <img id="placeholder" src="images/forrent/botanic/placeholder.png" onclick="openModal();currentSlide(6)"
           class="hover-shadow">
       </div>
 
@@ -144,17 +136,17 @@
         <div class="modal-content">
           <div class="mySlides">
             <div class="numbertext">1 / 8</div>
-            <img src="images/forrent/waterside/water1.png" style="width:100%">
+            <img src="images/forrent/waterside/water1.png">
           </div>
 
           <div class="mySlides">
             <div class="numbertext">2 / 8</div>
-            <img src="images/forrent/waterside/water2.png" style="width:100%">
+            <img src="images/forrent/waterside/water2.png">
           </div>
 
           <div class="mySlides">
             <div class="numbertext">3 / 8</div>
-            <img src="images/forrent/waterside/water6.png" style="width: 100%; transform: translateY(-50%);">
+            <img src="images/forrent/waterside/water6.png">
           </div>
 
           <div class="mySlides">
@@ -186,60 +178,58 @@
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
+    </div>
 
-      <div class="building-info">
-        <h3>Property Features</h3>
-        <div class="row">
-          <p id="building-info-text">The Convesso apartment comprises high quality fixtures and fittings contemporary
-            and unique interiors and finishes. Two bedrooms come with built in robes, open plan kitchen and dining area
-            with gas cooking, all the essential white goods including fridge and dishwasher and modern bathroom with
-            including washing machine. </p>
-          <div class="app-info">
-            <div class="row">
-              <p>2 <i class="fas fa-bed"></i><br>Bedroom</p>
-              <p>2 <i class="fas fa-bath"></i><br>Bathroom</p>
-              <p>1 <i class="fas fa-car"></i><br>Garage</p>
-            </div>
-            <div class="row">
-              <p>$2513<br>Bond</p>
-              <p>$580 Per Week<br>Price</p>
-            </div>
-          </div>
-        </div>
+    <div class="building-info">
+      <h3>Property Features</h3>
+      <div class="row">
+        <p>2 <i class="fas fa-bed"></i><br>Bedroom</p>
+        <p>2 <i class="fas fa-bath"></i><br>Bathroom</p>
+        <p>1 <i class="fas fa-car"></i><br>Garage</p>
+        <p>$2513<br>Bond</p>
+        <p>$580 Per Week<br>Price</p>
       </div>
-
-
-
-      <div class="footer">
-        <a href="/"> <img src="/images/Found-LOGO2W.png"></img></br> Your Property and Investment Navigator</a>
+      <div class="row">
+        <p id="building-info-text">The Convesso apartment comprises high quality fixtures and fittings contemporary
+          and unique interiors and finishes. Two bedrooms come with built in robes, open plan kitchen and dining area
+          with gas cooking, all the essential white goods including fridge and dishwasher and modern bathroom with
+          including washing machine. </p>
       </div>
+    </div>
 
-      <div class="footer-nav">
-        <a href="/sitemap">Site Map</a>
-        <span class="dot"></span>
-        <a href="/privacy">Privacy</a>
-        <span class="dot"></span>
-        <a href="/legal">Legal</a>
-        <i class="fa fa-university" style="font-size: 15px; margin-left: 20px; color: white;"></i>
-      </div>
+
+
+    <div class="footer">
+      <a href="/"> <img src="/images/Found-LOGO2W.png"></img></br> Your Property and Investment Navigator</a>
+    </div>
+
+    <div class="footer-nav">
+      <a href="/sitemap">Site Map</a>
+      <span class="dot"></span>
+      <a href="/privacy">Privacy</a>
+      <span class="dot"></span>
+      <a href="/legal">Legal</a>
+      <i class="fa fa-university" style="font-size: 15px; margin-left: 20px; color: white;"></i>
+    </div>
+
 </body>
 <script src="/js/waterside.js"></script>
 <script>
   var modal = document.getElementById('myModal');
-  
-  window.onclick = function(event) {
+
+  window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
-  </script>
+</script>
 <script>
-    var modal = document.getElementById('myModal');
-$( document ).on( 'keydown', function ( e ) {
-    if ( e.keyCode === 27 ) { // ESC
+  var modal = document.getElementById('myModal');
+  $(document).on('keydown', function (e) {
+    if (e.keyCode === 27) { // ESC
       modal.style.display = "none";
     }
-});
+  });
 </script>
-  
+
 </html>
