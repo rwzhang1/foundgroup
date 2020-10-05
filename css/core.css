@@ -17,7 +17,7 @@ body
   margin-top: 2vh;
   top: 2vh;
   margin-left: 50px;
-  z-index: 100;
+  z-index: 200;
   overflow: none;
   position: relative;
   text-align: center;
@@ -46,7 +46,7 @@ body
   overflow: none;
   width: 15vh;
   
-  z-index: 1;
+  z-index: 100;
   
   -webkit-user-select: none;
   user-select: none;
@@ -154,7 +154,7 @@ body
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(10%, 0);
+  transform: translate(0%, 0);
   transition: visibility 0s, opacity 0s linear;
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -180,7 +180,7 @@ body
 {
   visibility: visible;
   opacity: 1;
-  transform: translate(0%, 0);
+  transform: translate(5%, 0);
   transition: all .55s ease-in;
 }
 
@@ -738,4 +738,24 @@ text-align: center;
   display: inline-block;
   vertical-align: 2px;
   margin: 0px 5px;
+}
+
+@media screen and (max-width:1200px) {
+  #menu a {
+    padding: 20px 0px !important;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #menuToggle input:checked ~ ul {
+    transform: translate(10%, 10%);
+    background-color: black;
+  }
+}
+
+#menu a {
+  float: none;
+  display: block;
+  text-align: left;
 }
