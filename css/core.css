@@ -29,19 +29,6 @@ body
   max-width: 25rem;
 }
 
-.logo-title a {
-  text-decoration: none !important;
-  color: white;
-  font-size: 3vh;
-  line-height: 0px;
-}
-
-.logo-title a:hover {
-  text-decoration: none !important;
-  color: white !important;
-}
-
-
 .navigation {
   height: 138px;
 }

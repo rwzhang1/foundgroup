@@ -29,6 +29,7 @@ body
   max-width: 25rem;
 }
 
+
 .navigation {
   height: 138px;
 }
@@ -55,7 +56,7 @@ body
 #menuToggle a
 {
   text-decoration: none;
-  color: white;
+  color: black;
   
   transition: color 0.3s ease-in-out;
 }
@@ -96,7 +97,7 @@ body
   position: relative;
   margin-right: 150px;
   
-  background: white;
+  background: black;
   border-radius: 3px;
   
   z-index: 1;
@@ -121,7 +122,7 @@ body
 {
   opacity: 1;
   transform: rotate(45deg) translate(5px, 3px);
-  background: white;
+  background:black;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -701,6 +702,18 @@ cursor: pointer;
 @media screen and (max-height:600px) {
   .hero-border {
     border-style: none;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #menuToggle input:checked ~ span {
+    background: white;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #menuToggle a {
+    color: white;
   }
 }
 
