@@ -53,11 +53,11 @@ body
   display: inline-block;
   position: relative;
   margin-top: 2vh;
-  top: 3vh;
-  left: 5vh;
+  top: calc(10px + 2vh);
+  left: 0px;
   height: 138px;
   overflow: none;
-  width: 15vh;
+  width: 100px;
   
   z-index: 100;
   
@@ -93,8 +93,8 @@ body
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   
   -webkit-touch-callout: none;
 }
@@ -154,7 +154,7 @@ body
   position: absolute;
   display: inline;
   width: 1200px;
-  margin: -166px 0 0 -1200px;
+  margin: -166px 0 0 -800px;
   padding: 50px;
   background: transparent;
   padding-top: 125px;
@@ -179,7 +179,7 @@ body
   font-size: 22px;
   display: inline-block;
   margin-right: 50px;
-  float: right;
+  float: left;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
@@ -695,6 +695,25 @@ cursor: pointer;
   #menuToggle input:checked ~ ul {
     transform: translate(10%, 10%);
     background-color: black;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  #menu li {
+    float: right;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #menu {
+    margin: -166px 0 0 -1200px;
+  }
+}
+
+@media screen and (max-height:600px) {
+  .hero-border {
+    border-style: none;
   }
 }
 
