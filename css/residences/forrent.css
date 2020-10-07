@@ -224,7 +224,7 @@ body
   animation: tfadeIn 0.75s ease-in;
   transform: translateY(1vh);
   transition: 0.75s;
-  line-height: 40px;
+  line-height: 80px;
   text-align: center;
 }
 
@@ -317,7 +317,7 @@ body
   position: relative;
   text-align: center;
   margin: auto;
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
 
@@ -385,8 +385,8 @@ body
   font-size: 15px;
   line-height: 2.75rem;
   letter-spacing: 0.5px;
-  max-width: 1040px;
-  margin-bottom: 30px;
+  max-width: 840px;
+  margin: 0px 15px 30px 15px;
 }
 
 .building-info {
@@ -483,9 +483,10 @@ body
 @media screen and (max-width: 1200px) {
   #img6 {
     left: 55%;
-    width: 50%;
+    width: 45%;
   }
 }
+
 
 @media screen and (max-width: 1200px) {
   #img4 {
@@ -505,6 +506,51 @@ body
   }
 }
 
+
+@media screen and (max-width: 800px) {
+  #img6 {
+    left: 55%;
+    width: 45%;
+    height: 250px;
+    margin-top: 350px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #img4 {
+    width: 55%;
+    height: 250px;
+    margin-top: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #img3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #img5 {
+    width: 45%;
+    height: 150px;
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #img1 {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #img2 {
+    height: 200px;
+  }
+}
+
 #placeholder {
   height: 1200px;
   object-fit: cover;
@@ -512,6 +558,13 @@ body
   position: relative;
   left: 0;
   z-index: -10;
+}
+
+@media screen and (max-width: 800px) {
+  #placeholder {
+    width: 45%;
+    height: 600px;
+  }
 }
 
 .modal {
@@ -650,11 +703,6 @@ body
   display: inline-block;
   vertical-align: 2px;
   margin: 0px 5px;
-}
-
-.mySlides:nth-child(3) img {
-  width: 100%; 
-  object-fit: contain;
 }
 
 .mySlides img {
