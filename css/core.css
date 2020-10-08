@@ -394,8 +394,7 @@ video {
   text-align: center;
   margin: auto;
   margin: auto;
-  padding: 30px 55px;
- 
+  padding: 0px 55px 20px 0px;
 }
 
 .headline-banner-title {
@@ -414,7 +413,6 @@ video {
   font-size: 15px;
   line-height: 2.75rem;
   letter-spacing: 0.5px;
-  
 }
 
 .row .column {
@@ -643,48 +641,67 @@ text-align: center;
   transform: scale(1.07);
 }
 
-.quote p {
-  padding-top: 25px;
+.migration {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin: auto;
+  padding: 0px 55px 20px 0px;
+}
+
+.migration-title {
+  color: black;
+  text-transform: uppercase;
+  margin-top: 40px;
+  
+}
+
+.migration p {
+  padding-top: 15px;
   color: black;
   font-size: 15px;
-  line-height: 1.75rem;
-  margin: auto;
-  max-width: 1150px;
-  padding: 30px 55px;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  line-height: 1.4em;
-  font-weight: 330;
-  text-transform: uppercase;
+  line-height: 2.75rem;
+  letter-spacing: 0.5px;
 }
 
-.quote cite {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
+.visas .nav-pills {
+  padding: 0px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.testimonials {
-  text-align: center;
+.visas .nav-pills i {
+  font-size: 40px;
 }
 
-.testimonials button {
-  padding: 15px 30px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(25, 25, 25);
+.visas .nav-pills li {
+  padding-top: 10px !important;
   border-style: solid;
-  border-color: rgb(25, 25, 25);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 14px;
+  border-radius: 6px;
+  border-width: 1px;
+  margin-top: 5px;
+  border-color: rgba(0,0,0,.2);
 }
 
-.testimonials button:hover {
-  color: white;
-  background-color: rgb(25, 25, 25);
-  transition: all .25s ease-in-out;
+#studentvisa {
+  padding: 0px 3px;
 }
+
+.visas .nav-pills>li.active>a {
+  background-color: transparent !important;
+  font-weight: normal !important;
+  color: rgb(82, 157, 255) !important;
+  border-bottom-style: none !important;
+  padding-bottom: 0px !important;
+  border-bottom-width: 0px !important;
+  -webkit-text-stroke: 0.5px rgb(82, 157, 255);
+}
+
+.visas .tab-content h5 {
+  font-weight: 700;
+}
+
 
 .footer {
   text-align: center;
