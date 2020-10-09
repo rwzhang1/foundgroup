@@ -142,7 +142,8 @@ body
   display: inline;
   width: 1200px;
   margin: -166px 0 0 -800px;
-  padding: 50px;
+  padding: 40px;
+  padding-bottom: 10px;
   background: transparent;
   padding-top: 125px;
   visibility: hidden;
@@ -394,7 +395,7 @@ video {
   text-align: center;
   margin: auto;
   margin: auto;
-  padding: 0px 55px 20px 0px;
+  padding: 0px 55px 50px 0px;
 }
 
 .headline-banner-title {
@@ -537,6 +538,7 @@ margin-bottom: 10px !important;
 
 .neighbourhood {
   font-size: 17px;
+  animation: tfadeIn .3s ease-in;
 }
 
 .price {
@@ -614,6 +616,20 @@ text-align: center;
 
 .list-wrapper:hover > .listing {
   transform: scale(1.1);
+}
+
+.neighbourhood2 {
+  display: none;
+}
+
+.list-wrapper:hover .neighbourhood {
+  display: none;
+}
+
+.list-wrapper:hover .neighbourhood2 {
+  display: inline;
+  font-size: 17px;
+  animation: tfadeIn .3s ease-in;
 }
 
 .residence-placeholder {
@@ -766,14 +782,14 @@ text-align: center;
 @media screen and (max-width:1200px) {
   #menu a {
     padding: 20px 0px !important;
-    background-color: black;
+
   }
 }
 
 @media screen and (max-width:1200px) {
   #menuToggle input:checked ~ ul {
     transform: translate(10%, 10%);
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6)
   }
 }
 
