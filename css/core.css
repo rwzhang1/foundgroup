@@ -669,6 +669,7 @@ text-align: center;
   padding: 0px;
   margin-bottom: 30px;
   margin-top: 30px;
+  color: rgba(0,0,0,.6);
 }
 
 .visas .nav-pills i {
@@ -691,17 +692,22 @@ text-align: center;
 .visas .nav-pills>li.active>a {
   background-color: transparent !important;
   font-weight: normal !important;
-  color: rgb(82, 157, 255) !important;
+  color: rgb(0, 88, 202) !important;
   border-bottom-style: none !important;
   padding-bottom: 0px !important;
   border-bottom-width: 0px !important;
-  -webkit-text-stroke: 0.5px rgb(82, 157, 255);
+  -webkit-text-stroke: 0.5px rgb(0, 88, 202);
 }
 
 .visas .tab-content h5 {
   font-weight: 700;
 }
 
+.tab-content i {
+  margin-right: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+}
 
 .footer {
   text-align: center;
