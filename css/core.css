@@ -618,24 +618,56 @@ text-align: center;
   transform: scale(1.1);
 }
 
-.neighbourhood2 {
+#fr .rent-price {
   display: none;
 }
 
-.list-wrapper:hover .neighbourhood {
+#fr .general-features {
   display: none;
 }
 
-.list-wrapper:hover .neighbourhood2 {
+#fr .list-wrapper:hover .rent-price {
+  display: inline;
+  animation: tfadeIn .3s ease-in;
+  font-size: 14px;
+}
+
+#fr .list-wrapper:hover .neighbourhood {
+  display: none;
+}
+
+#fr .list-wrapper:hover .full-address {
+  display: none;
+}
+
+#fr .list-wrapper:hover .general-features {
   display: inline;
   font-size: 17px;
   animation: tfadeIn .3s ease-in;
 }
 
+#fr .list-wrapper:hover .general-features i {
+  display: inline;
+  font-size: 17px;
+  animation: tfadeIn .3s ease-in;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}
+
+#fs .list-wrapper:hover {
+  cursor: default;
+}
+
+#sd .list-wrapper:hover {
+  cursor: default;
+}
+
+
 .residence-placeholder {
   height: 703;
   background-color: rgb(255, 253, 234);
-
   display: block;
   float: left;
   width: 25%;
@@ -789,7 +821,7 @@ text-align: center;
 @media screen and (max-width:1200px) {
   #menuToggle input:checked ~ ul {
     transform: translate(10%, 10%);
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 

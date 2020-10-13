@@ -723,14 +723,13 @@ cursor: pointer;
 @media screen and (max-width:1200px) {
   #menu a {
     padding: 20px 0px !important;
-    background-color: black;
   }
 }
 
 @media screen and (max-width:1200px) {
   #menuToggle input:checked ~ ul {
     transform: translate(10%, 10%);
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 

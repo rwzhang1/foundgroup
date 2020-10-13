@@ -19,15 +19,15 @@ $(document).on('click', '#townh', function(e) {
 });
 
 $(document).on('click', '#rent', function(e) {
-  $("#fr").trigger('click');
+  $("#gfr").trigger('click');
 });
 
 $(document).on('click', '#sale', function(e) {
-  $("#fs").trigger('click');
+  $("#gfs").trigger('click');
 });
 
 $(document).on('click', '#sold', function(e) {
-  $("#sd").trigger('click');
+  $("#gsd").trigger('click');
 });
 
 window.onload=function(){
