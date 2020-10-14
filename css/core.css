@@ -519,6 +519,10 @@ margin-bottom: 10px !important;
   padding: 0px;
 }
 
+.current-projects .list-wrapper:hover {
+  cursor: default;
+}
+
 .tab-content img {
   height: 453px;
   object-fit: cover;
