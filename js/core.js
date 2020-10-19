@@ -7,27 +7,27 @@ function jumpr() {
 }
 
 $(document).on('click', '#apart', function(e) {
-  $("#gap").trigger('click');
+  document.querySelector('#gap').click(); 
 });
 
 $(document).on('click', '#house', function(e) {
-  $("#ghl").trigger('click');
+  document.querySelector('#ghl').click(); 
 });
 
 $(document).on('click', '#townh', function(e) {
-  $("#gth").trigger('click');
+  document.querySelector('#gth').click(); 
 });
 
 $(document).on('click', '#rent', function(e) {
-  $("#gfr").trigger('click');
+  document.querySelector('#gfr').click(); 
 });
 
 $(document).on('click', '#sale', function(e) {
-  $("#gfs").trigger('click');
+  document.querySelector('#gfs').click(); 
 });
 
 $(document).on('click', '#sold', function(e) {
-  $("#gsd").trigger('click');
+  document.querySelector('#gsd').click(); 
 });
 
 window.onload=function(){
