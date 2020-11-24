@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body
 {
   margin: 0;
@@ -26,7 +34,7 @@ body
 
 .logo-title img {
   margin-top: 1rem;
-  max-width: 25rem;
+  width: 25rem;
 }
 
 .navigation {
@@ -35,7 +43,6 @@ body
 
 #menuToggle
 {
-  margin-top: 10px;
   float: right;
   display: inline-block;
   position: relative;
@@ -271,6 +278,7 @@ video {
   margin-top: 8%;
   bottom: 6%;
   overflow: hidden;
+  animation: tfadeIn 0.75s ease-in;
 }
 
 .main-title a {
@@ -297,8 +305,13 @@ video {
 }
 
 .main-title li {
-  display: inline;
+  display: block;
   z-index: 6;
+}
+
+.main-title ul {
+  padding: none !important;
+  margin: none !important;
 }
 
 .main-title .dot {
@@ -395,7 +408,7 @@ video {
   text-align: center;
   margin: auto;
   margin: auto;
-  padding: 0px 55px 50px 0px;
+  margin-bottom: 50px;
 }
 
 .headline-banner-title {
@@ -699,7 +712,7 @@ text-align: center;
   text-align: center;
   margin: auto;
   margin: auto;
-  padding: 0px 55px 20px 0px;
+  margin-bottom: 20px;
 }
 
 .migration-title {
@@ -833,10 +846,81 @@ text-align: center;
   }
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-width:600px) {
   .hero-border {
     border-style: none;
   }
+}
+
+@media screen and (max-width:400px) {
+  .logo-title img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #menuToggle {
+    float: right;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .projects {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .main-title a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .headline {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .main-address {
+    font-size: 80%; 
+  }
+}
+
+@media screen and (max-width:400px) {
+  .full-address {
+    font-size: 80%; 
+  }
+}
+
+@media screen and (max-width:400px) {
+  .neighbourhood {
+    font-size: 80%; 
+  }
+}
+
+@media screen and (max-width:400px) {
+  .headline-banner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .migration {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #th-dot {
+    display: none;
+  }
+}
+
+.main-title ul {
+  padding: 0px !important;
 }
 
 #menu a {

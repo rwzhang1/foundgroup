@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body
 {
   margin: 0;
@@ -748,6 +756,25 @@ cursor: pointer;
 @media screen and (max-height:600px) {
   .hero-border {
     border-style: none;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .logo-title img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #menuToggle {
+    float: right;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .headline {
+    width: 80%;
   }
 }
 
