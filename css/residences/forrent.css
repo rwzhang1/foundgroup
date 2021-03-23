@@ -394,7 +394,7 @@ body
   line-height: 2.75rem;
   letter-spacing: 0.5px;
   max-width: 840px;
-  margin: 0px 15px 30px 15px;
+  margin: auto;
 }
 
 .building-info {
